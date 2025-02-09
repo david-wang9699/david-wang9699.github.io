@@ -8,6 +8,11 @@ body {
     color: #333;
 }
 
+/* Centering Heading Titles */
+h1, h2 {
+    text-align: center;
+}
+
 /* Header styles */
 header {
     text-align: center;
@@ -48,6 +53,13 @@ ul {
     margin-left: 2rem;
 }
 
+ul li img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    display: block;
+}
+
 /* Form styles */
 form {
     display: flex;
@@ -84,10 +96,4 @@ footer {
     padding: 1rem;
     background-color: #333;
     color: white;
-}
-
-footer .decorative-image {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
 }
