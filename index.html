@@ -14,46 +14,60 @@
         <p class="intro">Junior Computer Science Major passionate about accessibility.</p>
     </header>
 
-    <main>
+    <main id="main-content">
         <section>
             <h2>About Me</h2>
             <p>
-                Hi! I'm David Wang, a junior Computer Science major. My interest in accessibility stems from personal experience—I've struggled with accessibility challenges due to having very sensitive eyes. Bright surfaces with sharp contrasts are difficult for me to look at and often cause headaches. 
+                Hi! I'm David Wang, a junior Computer Science major. My interest in accessibility stems from personal experience—I've struggled with accessibility challenges due to having very sensitive eyes. 
+                <strong>Bright surfaces with sharp contrasts</strong> are difficult for me to look at and often cause headaches. 
             </p>
             <p>
-                My goal is to learn more about creating accessible designs to help others like me who face similar challenges.
+                My goal is to <strong>learn more</strong> about creating <em>accessible designs</em> to help others like me who face similar challenges.
             </p>
         </section>
 
         <section>
             <h2>My Interests</h2>
-            <ul>
-                <li>Volleyball</li>
-                <li>Ultimate Frisbee</li>
-                <li>Soccer</li>
-                <li>Football</li>
-                <li><img src="images/IMG_0030.JPG" alt="Decorative image related to sports"></li>
-            </ul>
+            <div class="centered-list-with-image">
+                <ul>
+                    <li>Volleyball</li>
+                    <li>Ultimate Frisbee</li>
+                    <li>Soccer</li>
+                    <li>Football</li>
+                </ul>
+                <img src="images/sports.jpeg" alt="" class="sports-image">
+            </div>
         </section>
-
+        
         <section>
             <h2>Connect with Me</h2>
-            <p>
-                Follow me on <a href="https://www.instagram.com/wangsanity17/" target="_blank">Instagram</a> or check out my projects on <a href="https://github.com/david-wang9699" target="_blank">GitHub</a>.
-            </p>
+            <div class="connect-container">
+                <div class="connect-item">
+                    <a href="https://github.com/david-wang9699" target="_blank">
+                        <img src="images/github.png" alt="GitHub Logo" class="connect-image">
+                    </a>
+                    <p>Check out my projects on <a href="https://github.com/david-wang9699" target="_blank">GitHub</a>.</p>
+                </div>
+                <div class="connect-item">
+                    <a href="https://www.instagram.com/wangsanity17/" target="_blank">
+                        <img src="images/insta.jpeg" alt="Instagram Logo" class="connect-image">
+                    </a>
+                    <p>Follow me on <a href="https://www.instagram.com/wangsanity17/" target="_blank">Instagram</a>.</p>
+                </div>
+            </div>
         </section>
 
         <section>
             <h2>Contact Me</h2>
             <form action="mailto:djw9699@tamu.edu" method="post" enctype="text/plain">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <input type="email" id="email" name="email" required aria-required="true">
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="40"></textarea><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
 
                 <button type="submit">Send</button>
             </form>
